@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"minVersion": "0.6",
+	"compatibilityLevel": "JAVA_8",
+	"package": "me.hobbyshop.hobbyloader.mixin",
+	"refmap": "mixins.hobbyloader.refmap.json",
+	"target": "@env(DEFAULT)",
+	"verbose": true,
+	"mixins": [
+		"client.MixinMinecraft"
+	]
+}
