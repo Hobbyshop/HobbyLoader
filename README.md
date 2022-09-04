@@ -1,5 +1,6 @@
 ## Hobby Loader
-Don't take this project to serious, I just make it to learn about jar-loading and reflections andt all that.
+Don't take this project to serious, I just make it to learn about jar-loading and reflections and all that.
+In addition to that I don't think you will ever be able to create a mod with this loader :/
 
 ### Usage
 In the root of your project you need to have a file called `module.json`.
@@ -14,4 +15,4 @@ Here's an example:
     "entry": "com.example.mod.Main"
 }
 ```
-Only the fields `"name"`and `"entry"` are required.
+Only the fields `"name"` and `"entry"` are required.
