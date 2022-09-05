@@ -26,6 +26,7 @@ Here is an example for that.
 package me.hobbyshop.example;
 
 import me.hobbyshop.hobbyloader.api.mod.HobbyMod;
+import me.hobbyshop.hobbyloader.api.mod.ModInfo;
 
 public class Main extends HobbyMod {
 
