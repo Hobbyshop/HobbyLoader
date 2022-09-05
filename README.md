@@ -25,7 +25,7 @@ Here is an example for that.
 ```java
 package me.hobbyshop.example;
 
-import me.hobbyshop.hobbyloader.api.HobbyMod;
+import me.hobbyshop.hobbyloader.api.mod.HobbyMod;
 
 public class Main extends HobbyMod {
 
