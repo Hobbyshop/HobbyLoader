@@ -1,11 +1,18 @@
 package me.hobbyshop.hobbyloader;
 
+import lombok.Getter;
+import me.hobbyshop.hobbyloader.mod.ModManager;
+
 public class HobbyLoader {
 
     private static HobbyLoader instance;
 
+    @Getter
+    private ModManager modManager;
+
     public void start() {
-        System.out.println("Hello from the other side");
+        modManager = new ModManager();
+        modManager.init();
     }
 
     public void stop() {

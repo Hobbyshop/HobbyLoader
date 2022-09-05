@@ -15,15 +15,15 @@ apply plugin: 'net.minecraftforge.gradle.tweaker-client'
 apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'java'
 
-String tweakerClass = 'io.github.axst.launch.TCLTweaker'
-String tweaker = 'tcl'
+String tweakerClass = 'me.hobbyshop.hobbyloader.launch.Tweaker'
+String tweaker = 'hobbyloader'
 
 compileJava {
 	sourceCompatibility = targetCompatibility = 8
 }
 
 version '1.8.9'
-group 'io.github.axst'
+group 'me.hobbyshop.hobbyloader'
 
 minecraft {
 	version = '1.8.9'
@@ -55,6 +55,8 @@ configurations {
 dependencies {
 	compileOnly('org.projectlombok:lombok:1.18.24')
 	annotationProcessor('org.projectlombok:lombok:1.18.24')
+	implementation('com.google.code.gson:gson:2.9.1')
+
 	tclmdk('org.spongepowered:mixin:0.7.11-SNAPSHOT') {
 		exclude module: 'launchwrapper'
 		exclude module: 'guava'
