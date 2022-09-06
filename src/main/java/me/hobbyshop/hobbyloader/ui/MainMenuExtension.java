@@ -1,7 +1,6 @@
 package me.hobbyshop.hobbyloader.ui;
 
 import me.hobbyshop.hobbyloader.HobbyLoader;
-import me.hobbyshop.hobbyloader.api.mod.HobbyMod;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.GuiButton;

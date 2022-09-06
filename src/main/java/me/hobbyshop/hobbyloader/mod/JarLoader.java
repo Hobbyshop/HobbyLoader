@@ -37,11 +37,13 @@ public class JarLoader {
                     continue;
                 }
                 Class<?> mod = loader.loadClass(info.get().getEntry());
-                if (!(mod.getConstructor(ModInfo.class).newInstance(info.get()) instanceof HobbyMod)) {
+                try {
+                    HobbyMod instance = (HobbyMod) mod.getConstructor(ModInfo.class).newInstance(info.get());
+                    System.out.println("heheheha");
+                    mods.add(instance);
+                } catch (ClassCastException e) {
                     System.err.println("Main class of module " + file.getFileName() + " does not implement HobbyMod");
-                    continue;
                 }
-                mods.add((HobbyMod) mod.getConstructor(ModInfo.class).newInstance(info.get()));
             }
 
         } catch (Exception e) {
